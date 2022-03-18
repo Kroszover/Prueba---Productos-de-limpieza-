@@ -82,14 +82,53 @@ public class ProductoDaoImpl implements ProductoDao {
 
 	@Override
 	public boolean agregarProducto(Producto producto) {
-		// TODO Auto-generated method stub
+	String sql = "INSERT INTO producto (id_producto, nombre_producto, precio_producto, descripcion_producto, id_categoria_fk)" + "VALUES (?, ?. ?, ?, ?)";
+	conexion = conn.obtenerConexion();
+	try {
+		pstm = conexion.prepareStatement(sql);
+		
+		pstm.setInt(1, producto.getIdProducto());
+		pstm.setString(2, producto.getNombreProducto());
+		pstm.setInt(3, producto.getPrecioProducto());
+		pstm.setString(4, producto.getDescripcionProducto());
+		pstm.setInt(5, producto.getIdCategoria());
+		
+		int resultado = pstm.executeUpdate();
+		if (resultado == 1) {
+			return true;
+		}
+		
+	} catch (SQLException e) {
+	
+		e.printStackTrace();
+	}
 		return false;
 	}
 
 	@Override
 	public boolean modificarProducto(Producto producto) {
-		// TODO Auto-generated method stub
-		return false;
+		String sql = "UPDATE producto SET nombre_producto = ?, precio_producto = ?, descripcion_producto = ?, id_categoria_fk = ? " + "WHERE id_producto = ?";
+		conexion = conn.obtenerConexion();
+		try {
+			pstm = conexion.prepareStatement(sql);
+			
+		
+			pstm.setString(1, producto.getNombreProducto());
+			pstm.setInt(2, producto.getPrecioProducto());
+			pstm.setString(3, producto.getDescripcionProducto());
+			pstm.setInt(4, producto.getIdCategoria());
+			pstm.setInt(5, producto.getIdProducto());
+			
+			int resultado = pstm.executeUpdate();
+			if (resultado == 1) {
+				return true;
+			}
+			
+		} catch (SQLException e) {
+		
+			e.printStackTrace();
+		}
+			return false;
 	}
 
 	@Override
