@@ -31,7 +31,7 @@ public class ProductoDaoImpl implements ProductoDao {
 //Se añaden los metodos no implementados.
 	@Override
 	public Producto buscarProducto(int idProducto) {
-		String sql = "SELECT * FROM producto WHERE id = ?";
+		String sql = "SELECT * FROM producto WHERE id_producto = ?";
 		Producto producto = new Producto();
 		conexion = conn.obtenerConexion();
 		try {
