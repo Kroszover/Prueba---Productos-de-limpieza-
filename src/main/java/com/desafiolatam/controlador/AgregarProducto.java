@@ -43,10 +43,10 @@ public class AgregarProducto extends HttpServlet {
 		
 		
 		
-		String nombreProducto = request.getParameter("Nombre");
+		String nombreProducto = request.getParameter("nombre");
 		int precioProducto = Integer.parseInt(request.getParameter("precio"));
 		String descripcionProducto = request.getParameter("descripcion");
-		int idCategoria = Integer.parseInt(request.getParameter("Categoria"));
+		int idCategoria = Integer.parseInt(request.getParameter("categoria"));
 	
 		int id = productoDao.obtenerUltimoId() + 1;
 		
