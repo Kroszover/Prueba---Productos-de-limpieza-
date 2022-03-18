@@ -12,13 +12,13 @@ package examen.desafiolatam.modelo;
  */
 
 //Atributos de los objetos de las tablas
-public class categoria {
+public class Categoria {
 	//Atributos de clase
 	private int idCategoria;
 	private String nombreCategoria;
 
 	//Constructor vacio.
-	public categoria() {
+	public Categoria() {
 		super();
 	}
 	
@@ -27,7 +27,7 @@ public class categoria {
 	 * @param idCategoria
 	 * @param nombreCategoria
 	 */
-	public categoria(int idCategoria, String nombreCategoria) {
+	public Categoria(int idCategoria, String nombreCategoria) {
 		super();
 		this.idCategoria = idCategoria;
 		this.nombreCategoria = nombreCategoria;
