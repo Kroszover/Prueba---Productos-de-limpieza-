@@ -133,14 +133,44 @@ public class ProductoDaoImpl implements ProductoDao {
 
 	@Override
 	public boolean eliminarProducto(int idProducto) {
-		// TODO Auto-generated method stub
-		return false;
+		String sql = "DELETE FROM producto WHERE id_producto = ?";
+		conexion = conn.obtenerConexion();
+		try {
+			pstm = conexion.prepareStatement(sql);
+			
+			pstm.setInt(1, idProducto);
+			int resultado = pstm.executeUpdate();
+			if (resultado == 1) {
+				return true;
+			}
+			
+		} catch (SQLException e) {
+		
+			e.printStackTrace();
+		}
+			return false;
 	}
 
 	@Override
 	public int obtenerUltimoId() {
-		// TODO Auto-generated method stub
-		return 0;
+		int maximo = 0;
+		String sql = "SELECT MAX (id_producto) AS max FROM producto";
+		
+		conexion = conn.obtenerConexion();
+		try {
+			pstm = conexion.prepareStatement(sql);
+			rs = pstm.executeQuery();
+			
+			if (rs.next()) {
+		maximo = rs.getInt("max");
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return maximo;
+	
 	}
 
 }
