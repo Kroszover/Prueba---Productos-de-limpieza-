@@ -1,5 +1,15 @@
 package examen.desafiolatam.modelo;
 
+
+/**
+ * @author camilo Lavado
+ * @date 18/03/2022
+ * @version 1.0.0
+ * @category Pruebas y Examenes
+ *
+ */
+
+
 public class CategoriaProducto {
 	private Producto producto;
 	private Categoria categoria;
