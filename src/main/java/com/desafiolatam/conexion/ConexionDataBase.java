@@ -1,5 +1,5 @@
 
-package examen.desafiolatam.conexion;
+package com.desafiolatam.conexion;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

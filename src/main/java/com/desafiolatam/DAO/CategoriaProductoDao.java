@@ -1,10 +1,10 @@
 /**
  * 
  */
-package examen.desafiolatam.DAO;
+package com.desafiolatam.DAO;
 import java.util.List;
 
-import examen.desafiolatam.modelo.CategoriaProducto;
+import com.desafiolatam.modelo.CategoriaProducto;
 
 /**
  * @author camilo Lavado

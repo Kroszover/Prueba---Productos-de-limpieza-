@@ -1,7 +1,7 @@
 /**
  * 
  */
-package examen.desafiolatam.DAO;
+package com.desafiolatam.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,8 +10,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import examen.desafiolatam.conexion.ConexionDataBase;
-import examen.desafiolatam.modelo.Producto;
+import com.desafiolatam.conexion.ConexionDataBase;
+import com.desafiolatam.modelo.Producto;
 
 /**
  * @author camilo Lavado

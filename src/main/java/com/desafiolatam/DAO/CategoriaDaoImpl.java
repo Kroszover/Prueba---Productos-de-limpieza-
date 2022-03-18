@@ -1,7 +1,7 @@
 /**
  * 
  */
-package examen.desafiolatam.DAO;
+package com.desafiolatam.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,12 +10,15 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import examen.desafiolatam.conexion.ConexionDataBase;
-import examen.desafiolatam.modelo.Categoria;
+import com.desafiolatam.conexion.ConexionDataBase;
+import com.desafiolatam.modelo.Categoria;
 
 
 /**
- * @author cilg1
+ * @author camilo Lavado
+ * @date 18/03/2022
+ * @version 1.0.0
+ * @category Pruebas y Examenes
  *
  */
 public class CategoriaDaoImpl implements CategoriaDao {

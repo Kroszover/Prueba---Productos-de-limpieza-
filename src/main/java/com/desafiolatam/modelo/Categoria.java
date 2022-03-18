@@ -1,7 +1,7 @@
 /**
  * 
  */
-package examen.desafiolatam.modelo;
+package com.desafiolatam.modelo;
 
 /**
  * @author camilo Lavado
