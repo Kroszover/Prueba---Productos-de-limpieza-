@@ -5,9 +5,17 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Eliminar Producto</title>
 </head>
 <body>
+<h1>Eliminar Bicicleta</h1>
+<p>¿Estas seguro de eliminar el producto?</p>
+<form action="/EliminarProducto" method = "POST">
+	<input type= "hidden" value="${id}" name="id">
+	<button type="submit"> si</button>
+	<a href="/">No</a>
+</form>
+	<a href="/">Volver al inicio</a>
 
 </body>
 </html>
