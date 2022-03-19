@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Error</title>
 </head>
 <body>
+<h1>Error</h1>
+<p>Ha ocurrido un error al procesar la solicitud </p>
+<a href="/">Volver al inicio</a>
 
 </body>
 </html>
