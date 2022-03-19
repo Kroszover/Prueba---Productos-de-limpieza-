@@ -10,13 +10,13 @@
 <body>
 <h1>Modificar Producto</h1>
 <form action="/ModificarProducto" method="POST">
-	<input type = "hidden" value="${producto.getId()" name="id_bicicleta"/>
+	<input type = "hidden" value="${producto.getId()" name="id_producto"/>
 	<Label for = "nombre">Nombre</Label>
-	<input type = "text" name= "nombre" id="nombre" value="${bicicleta.getNombre()}"/>
+	<input type = "text" name= "nombre" id="nombre" value="${producto.getNombre()}"/>
 	<Label for = "precio">Precio</Label>
-	<input type = "number" name= "precio" id="precio" value= "${bicicleta.getPrecio}"/>
+	<input type = "number" name= "precio" id="precio" value= "${producto.getPrecio}"/>
 	<Label for = "descripcion">Descripcion</Label>
-	<input type = "text" name= "descripcion" id="descripcion" value="${bicicleta.getDescripcion}"/>
+	<input type = "text" name= "descripcion" id="descripcion" value="${producto.getDescripcion}"/>
 	<Label>Categoria</Label>
 	<select name="categoria" id="categoria">
 	<c:forEach items="${categorias}" var= "categoria">

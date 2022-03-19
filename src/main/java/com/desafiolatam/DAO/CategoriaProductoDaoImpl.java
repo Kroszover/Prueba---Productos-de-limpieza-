@@ -30,12 +30,13 @@ public class CategoriaProductoDaoImpl implements CategoriaProductoDao {
 		List<Producto> listaProductos = productoDao.listarProductos();
 		
 		for (Producto producto: listaProductos) {
-			Categoria categoria = categoriaDao.buscarCategoria(producto.getIdProducto());
+			Categoria categoria = categoriaDao.buscarCategoria(producto.getIdCategoria());
 			
 			CategoriaProducto categoriaProducto = new CategoriaProducto();
 			categoriaProducto.setProducto(producto);
 			categoriaProducto.setCategoria(categoria);
-			
+			System.out.println("nombre categoria:" + categoriaProducto.getCategoria().getNombreCategoria());
+			System.out.println("Id = " + categoriaProducto.getCategoria().getIdCategoria());
 			lista.add(categoriaProducto);
 			
 		}

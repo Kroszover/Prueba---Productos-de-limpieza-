@@ -10,7 +10,7 @@
 <body>
 <h1>Limpiecito Store LTDA</h1>
 <p> Bienvenidos</p>
-<a href="/ListarProducto">Listar Productos</a>
-<a href="/AgregarProducto">Agregar Producto</a>
+<a href="ListarProducto">Listar Productos</a>
+<a href="AgregarProducto">Agregar Producto</a>
 </body>
 </html>

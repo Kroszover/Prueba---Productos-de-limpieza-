@@ -20,7 +20,7 @@ public class ListarProducto extends HttpServlet {
 	private CategoriaProductoDao categoriaProductoDao = new  CategoriaProductoDaoImpl();
   
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+	System.out.println("Estamos en el servlet");
 	List<CategoriaProducto>	 lista = categoriaProductoDao.listarCategoriaProducto();
 	
 	request.setAttribute("productos", lista);

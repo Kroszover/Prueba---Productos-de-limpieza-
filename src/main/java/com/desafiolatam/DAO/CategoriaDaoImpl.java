@@ -29,6 +29,7 @@ public class CategoriaDaoImpl implements CategoriaDao {
 	@Override
 	public Categoria buscarCategoria(int idCategoria) {
 			String sql = "SELECT * FROM categoria WHERE id_categoria = ?";
+			System.out.println("idCategoria : = "+ idCategoria);
 			Categoria categoria = new Categoria();
 			conexion = conn.obtenerConexion();
 			try {
@@ -38,8 +39,9 @@ public class CategoriaDaoImpl implements CategoriaDao {
 				
 				if (rs.next()) {
 			categoria.setIdCategoria(rs.getInt("id_categoria"));
-			categoria.setNombreCategoria("nombre_categoria");
+			categoria.setNombreCategoria(rs.getString("nombre_categoria"));
 			
+			System.out.println("Aca va el resulset = "+rs.getString("nombre_categoria"));
 					
 				}
 			} catch (SQLException e) {
@@ -62,7 +64,9 @@ public class CategoriaDaoImpl implements CategoriaDao {
 			while (rs.next()) {
 				Categoria categoria = new Categoria();
 		categoria.setIdCategoria(rs.getInt("id_categoria"));
-		categoria.setNombreCategoria("nombre_categoria");
+		System.out.println("ID_categoria= " + rs.getInt("id_categoria"));
+		categoria.setNombreCategoria(rs.getString("nombre_categoria"));
+		System.out.println("nombre de categoria1 = " +rs.getString("nombre_categoria"));
 		listaCategorias.add(categoria);
 		
 				
