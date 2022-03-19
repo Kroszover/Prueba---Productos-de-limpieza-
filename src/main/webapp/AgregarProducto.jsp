@@ -11,11 +11,11 @@
 <h1>Agregar Producto</h1>
 <form action="/AgregarProducto" method="POST">
 	<Label for = "nombre">Nombre</Label>
-	<input type = "text" name= "nombre" id="nombre">
+	<input type = "text" name= "nombre" id="nombre"/>
 	<Label for = "precio">Precio</Label>
-	<input type = "number" name= "precio" id="precio">
+	<input type = "number" name= "precio" id="precio"/>
 	<Label for = "descripcion">Descripcion</Label>
-	<input type = "text" name= "descripcion" id="descripcion">
+	<input type = "text" name= "descripcion" id="descripcion"/>
 	<Label>Categoria</Label>
 	<select name="categoria" id="categoria">
 	<c:forEach items="${categorias}" var= "categoria">
