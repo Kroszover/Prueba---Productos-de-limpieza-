@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>Modificar Producto</h1>
-<form action="/ModificarProducto" method="POST">
+<form action="ModificarProducto" method="POST">
 	<input type = "hidden" value="${producto.getId()" name="id_producto"/>
 	<Label for = "nombre">Nombre</Label>
 	<input type = "text" name= "nombre" id="nombre" value="${producto.getNombre()}"/>
