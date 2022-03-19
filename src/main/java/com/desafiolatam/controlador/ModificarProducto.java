@@ -74,6 +74,7 @@ request.setCharacterEncoding("UTF-8");
 		producto.setIdCategoria(idCategoria);
 		
 		productoDao.modificarProducto(producto);
+		System.out.println("producto:"+producto);
 		
 		request.getRequestDispatcher("PaginaInicio.jsp").forward(request, response);
 	}
