@@ -15,7 +15,7 @@
 	<button type="submit"> si</button>
 	<a href="/">No</a>
 </form>
-	<a href="/">Volver al inicio</a>
+	<a href="/Prueba_-_Productos_de_Limpieza">Volver al inicio</a>
 
 </body>
 </html>

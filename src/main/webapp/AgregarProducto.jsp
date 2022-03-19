@@ -19,11 +19,11 @@
 	<Label>Categoria</Label>
 	<select name="categoria" id="categoria">
 	<c:forEach items="${categorias}" var= "categoria">
-	<option value="${categoria.getId()}">${categoria.getNombre()}</option>
+	<option value="${categoria.getIdCategoria()}">${categoria.getNombreCategoria()}</option>
 	</c:forEach>
 	</select>
 	<button type= "submit">Enviar</button>
 </form>
-<a href="/">Volver al inicio</a>
+<a href="/Prueba_-_Productos_de_Limpieza">Volver al inicio</a>
 </body>
 </html>

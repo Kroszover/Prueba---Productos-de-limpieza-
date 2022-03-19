@@ -27,7 +27,7 @@
 	</select>
 	<button type= "submit">Enviar</button>
 </form>
-<a href="/">Volver al inicio</a>
+<a href="/Prueba_-_Productos_de_Limpieza">Volver al inicio</a>
 
 </body>
 </html>

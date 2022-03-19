@@ -10,7 +10,7 @@
 <body>
 <h1>Error</h1>
 <p>Ha ocurrido un error al procesar la solicitud </p>
-<a href="/">Volver al inicio</a>
+<a href="/Prueba_-_Productos_de_Limpieza">Volver al inicio</a>
 
 </body>
 </html>
