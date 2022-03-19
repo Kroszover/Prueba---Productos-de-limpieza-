@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>Agregar Producto</h1>
-<form action="/AgregarProducto" method="POST">
+<form action="AgregarProducto" method="POST">
 	<Label for = "nombre">Nombre</Label>
 	<input type = "text" name= "nombre" id="nombre"/>
 	<Label for = "precio">Precio</Label>

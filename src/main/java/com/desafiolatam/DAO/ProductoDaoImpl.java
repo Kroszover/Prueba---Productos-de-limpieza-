@@ -82,7 +82,7 @@ public class ProductoDaoImpl implements ProductoDao {
 
 	@Override
 	public boolean agregarProducto(Producto producto) {
-	String sql = "INSERT INTO producto (id_producto, nombre_producto, precio_producto, descripcion_producto, id_categoria_fk)" + "VALUES (?, ?. ?, ?, ?)";
+	String sql = "INSERT INTO producto (id_producto, nombre_producto, precio_producto, descripcion_producto, id_categoria_fk)" + "VALUES (?, ?, ?, ?, ?)";
 	conexion = conn.obtenerConexion();
 	try {
 		pstm = conexion.prepareStatement(sql);
@@ -169,7 +169,7 @@ public class ProductoDaoImpl implements ProductoDao {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return maximo;
+		return maximo +1;
 	
 	}
 
