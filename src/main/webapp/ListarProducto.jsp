@@ -24,14 +24,17 @@
 		<td>${producto.getProducto().getprecioProducto()}</td>
 		<td>${producto.getProducto().getdescripcionProducto()}</td>
 		<td>${producto.getCategoria().getnombreCategoria()}</td>
-		<td></td>
+		<td>
+		<a href="/ModificarProducto.jsp?id_producto=${producto.getProducto().getId()}">Modificar Producto</a>&nbsp;
+		<a href="/EliminarProducto.jsp?id_producto=${producto.getProducto().getId()}">Eliminar Producto</a>
+		</td>
 		
 	</tr>
 </c:forEach>
 
 
 </table>
-
+<a href="/">Volver al inicio</a>
 
 </body>
 </html>
