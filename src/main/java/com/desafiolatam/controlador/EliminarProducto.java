@@ -20,13 +20,13 @@ public class EliminarProducto extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		int id = Integer.parseInt(request.getParameter("idProducto"));
+		int id = Integer.parseInt(request.getParameter("id"));
 		
 		if (id <= 0) {
 			request.getRequestDispatcher("Error.jsp").forward(request, response);
 		}
 		
-		request.setAttribute("idProducto", id);
+		request.setAttribute("id", id);
 		request.getRequestDispatcher("EliminarProducto.jsp").forward(request, response);
 	}
 

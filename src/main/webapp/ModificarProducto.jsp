@@ -10,7 +10,7 @@
 <body>
 <h1>Modificar Producto</h1>
 <form action="ModificarProducto" method="POST">
-	<input type = "hidden" value="${producto.getId()" name="id_producto"/>
+	<input type = "hidden" value="${producto.getId()}" name="id_producto"/>
 	<Label for = "nombre">Nombre</Label>
 	<input type = "text" name= "nombre" id="nombre" value="${producto.getNombre()}"/>
 	<Label for = "precio">Precio</Label>
@@ -20,9 +20,7 @@
 	<Label>Categoria</Label>
 	<select name="categoria" id="categoria">
 	<c:forEach items="${categorias}" var= "categoria">
-	<option value="${categoria.getId()}"
-	
-	${categoria.getId() == producto.getIdCategoria() ? 'selected' : ''}>${categoria.getNombre()}</option>
+	<option value="${categoria.getIdCategoria()}">${categoria.getNombreCategoria()}</option>
 	</c:forEach>
 	</select>
 	<button type="submit">Enviar</button>

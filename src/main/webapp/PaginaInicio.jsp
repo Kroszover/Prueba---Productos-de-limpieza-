@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-min.css">
 <meta charset="UTF-8">
 <title>Limpiecito Store LTDA.</title>
 </head>

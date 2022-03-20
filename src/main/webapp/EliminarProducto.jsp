@@ -11,7 +11,7 @@
 <h1>Eliminar Producto</h1>
 <p>¿Estas seguro de eliminar el producto?</p>
 <form action="EliminarProducto" method = "POST">
-	<input type= "hidden" value="${id}" name="id">
+	<input type="hidden" value="${idProducto}" name="id">
 	<button type="submit"> si</button>
 	<a href="/Prueba_-_Productos_de_Limpieza">No</a>
 </form>
